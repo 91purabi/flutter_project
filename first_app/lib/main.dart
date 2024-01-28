@@ -11,11 +11,18 @@ void main() {
             gradient: LinearGradient(
               colors: [
                 Color.fromARGB(255, 160, 120, 230),
+                Color.fromARGB(255, 160, 120, 230),
               ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('Hello World!'),
+            child: Text('Hello World!!',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                )),
           ),
         ),
       ),
