@@ -1,4 +1,6 @@
 import 'package:first_app/first_screen.dart';
+import 'package:first_app/layout.dart';
+import 'package:first_app/project2/card_1.dart';
 import 'package:first_app/second_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,8 +10,9 @@ void main() {
       title: 'Named Routes Demo',
       initialRoute: '/',
       routes: {
-        '/': (context) => const FirstScreen(),
-        '/second': (context) => const SecondScreen(),
+        // '/': (context) => const FirstScreen(),
+        // '/second': (context) => const SecondScreen(),
+        '/': (context) => const CardExample(),
       },
     ),
   );
