@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prestigious_project/widget/card_example_screen.dart';
 import 'package:prestigious_project/widget/prestigious_project.dart';
+import 'package:prestigious_project/widget/prestigious_project_header_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Prestigious Project'),
       ),
-      body: Container(
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
@@ -29,10 +30,27 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             CardExampleScreen(),
+            HeaderCardExampleScreen(),
             PrestigiousProject(
               projectName: 'Vatika Scheme',
               financialProgressCurrentValue: '80',
               financialProgressTotalValue: '100',
+              physicalProgressCurrentValue: '1497',
+              physicalProgressTotalValue: '365',
+            ),
+            PrestigiousProject(
+              projectName: 'Sanjeevani',
+              financialProgressCurrentValue: '1',
+              financialProgressTotalValue: '40',
+              physicalProgressCurrentValue: '1528',
+              physicalProgressTotalValue: '761',
+            ),
+            PrestigiousProject(
+              projectName: 'Vatika Scheme',
+              financialProgressCurrentValue: '0',
+              financialProgressTotalValue: '40',
+              physicalProgressCurrentValue: '1376',
+              physicalProgressTotalValue: '244',
             ),
           ],
         ),
