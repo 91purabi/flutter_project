@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class HeaderCardExampleScreen extends StatelessWidget {
-  const HeaderCardExampleScreen({super.key});
+class ProjectNameProgressHeaderWidget extends StatelessWidget {
+  const ProjectNameProgressHeaderWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 8, right: 8, bottom: 2, top: 8),
+      padding: const EdgeInsets.only(left: 8, right: 8, bottom: 2, top: 2),
       child: Container(
         color: Color.fromARGB(255, 235, 230, 236),
         child: Padding(

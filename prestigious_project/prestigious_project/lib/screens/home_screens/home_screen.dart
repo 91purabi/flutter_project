@@ -1,7 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:prestigious_project/screens/home_screens/widgets/dialogs/project_name_and_progress_dialog.dart';
 import 'package:prestigious_project/widget/card_example_screen.dart';
 import 'package:prestigious_project/widget/prestigious_project.dart';
 import 'package:prestigious_project/widget/prestigious_project_header_card.dart';
+import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
+import 'package:prestigious_project/widget1/work_order_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,7 +23,8 @@ class HomeScreen extends StatelessWidget {
             Container(
               height: 60,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding:
+                    const EdgeInsets.only(bottom: 1, left: 8, right: 8, top: 8),
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -29,14 +35,25 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            CardExampleScreen(),
-            HeaderCardExampleScreen(),
-            PrestigiousProject(
-              projectName: 'Vatika Scheme',
-              financialProgressCurrentValue: '80',
-              financialProgressTotalValue: '100',
-              physicalProgressCurrentValue: '1497',
-              physicalProgressTotalValue: '365',
+            ProjectBudgetCountCardWidget(),
+            ProjectNameProgressHeaderWidget(),
+            // List of Item Card
+            InkWell(
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return ProjectNameAndProgressDialog();
+                  },
+                );
+              },
+              child: PrestigiousProject(
+                projectName: 'Vatika Scheme',
+                financialProgressCurrentValue: '80',
+                financialProgressTotalValue: '100',
+                physicalProgressCurrentValue: '1497',
+                physicalProgressTotalValue: '365',
+              ),
             ),
             PrestigiousProject(
               projectName: 'Sanjeevani',
@@ -46,12 +63,14 @@ class HomeScreen extends StatelessWidget {
               physicalProgressTotalValue: '761',
             ),
             PrestigiousProject(
-              projectName: 'Vatika Scheme',
+              projectName: 'Maruti',
               financialProgressCurrentValue: '0',
               financialProgressTotalValue: '40',
               physicalProgressCurrentValue: '1376',
               physicalProgressTotalValue: '244',
             ),
+            //OntapPrestigiousProjectCard(),
+            ProjectNameAndProgressDialogChildWidget(),
           ],
         ),
       ),
