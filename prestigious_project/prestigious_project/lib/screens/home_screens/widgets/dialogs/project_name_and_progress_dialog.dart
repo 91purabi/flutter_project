@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
-import 'package:prestigious_project/widget1/work_order_detail_screen.dart';
+//import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
+import 'package:prestigious_project/widget1/project_name_and_progress_dialog_widget.dart';
 
 class ProjectNameAndProgressDialog extends StatelessWidget {
   const ProjectNameAndProgressDialog({super.key});

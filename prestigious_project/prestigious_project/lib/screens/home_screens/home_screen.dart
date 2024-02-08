@@ -5,8 +5,8 @@ import 'package:prestigious_project/screens/home_screens/widgets/dialogs/project
 import 'package:prestigious_project/widget/card_example_screen.dart';
 import 'package:prestigious_project/widget/prestigious_project.dart';
 import 'package:prestigious_project/widget/prestigious_project_header_card.dart';
-import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
-import 'package:prestigious_project/widget1/work_order_detail_screen.dart';
+//import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
+import 'package:prestigious_project/widget1/project_name_and_progress_dialog_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
               physicalProgressTotalValue: '244',
             ),
             //OntapPrestigiousProjectCard(),
-            ProjectNameAndProgressDialogChildWidget(),
+            //ProjectNameAndProgressDialogChildWidget(),
           ],
         ),
       ),

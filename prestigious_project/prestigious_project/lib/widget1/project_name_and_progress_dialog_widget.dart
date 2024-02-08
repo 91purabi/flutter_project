@@ -21,6 +21,25 @@ class _ProjectNameAndProgressDialogChildWidgetState
     return SingleChildScrollView(
       child: Column(
         children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color.fromARGB(255, 132, 22, 148)),
+                child: Stack(
+                  children: [
+                    Positioned(
+                        child: Icon(
+                      Icons.close,
+                      color: Colors.white,
+                    )),
+                  ],
+                ),
+              ),
+            ],
+          ),
           PrestigiousProjectCardDialogWidget(),
           Padding(
             padding: const EdgeInsets.all(15.0),
@@ -45,6 +64,7 @@ class _ProjectNameAndProgressDialogChildWidgetState
             height: 20,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CommonProgressAndCountWidget(
                   progressColor: Colors.orange,
@@ -101,6 +121,7 @@ class _ProjectNameAndProgressDialogChildWidgetState
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     child: CardsWidgets(
@@ -108,15 +129,18 @@ class _ProjectNameAndProgressDialogChildWidgetState
                   ),
                   Container(
                     child: CardsWidgets(
-                        cardsTextTitle: 'Check In', cardsColor: Colors.green),
+                        cardsTextTitle: 'Check In',
+                        cardsColor: Color.fromARGB(255, 51, 16, 114)),
                   ),
                   Container(
                     child: CardsWidgets(
-                        cardsTextTitle: 'Check In', cardsColor: Colors.green),
+                        cardsTextTitle: 'Check In',
+                        cardsColor: Color.fromARGB(255, 51, 16, 114)),
                   ),
                   Container(
                     child: CardsWidgets(
-                        cardsTextTitle: 'Check In', cardsColor: Colors.green),
+                        cardsTextTitle: 'Check In',
+                        cardsColor: Color.fromARGB(255, 51, 16, 114)),
                   ),
                 ],
               ),
