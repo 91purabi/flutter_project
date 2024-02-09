@@ -24,13 +24,16 @@ class CardsWidgets extends StatelessWidget {
               //color: Colors.green,
               color: cardsColor,
             ),
-            height: 40,
-            width: 80,
+            height: 45,
+            width: 90,
             child: Center(
-                child: Text(
-              // 'Check in',
-              cardsTextTitle,
-              style: TextStyle(color: Colors.white),
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                // 'Check in',
+                cardsTextTitle,
+                style: TextStyle(color: Colors.white),
+              ),
             )),
           ),
         ]));

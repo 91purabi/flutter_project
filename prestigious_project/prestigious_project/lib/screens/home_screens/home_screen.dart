@@ -5,8 +5,12 @@ import 'package:prestigious_project/screens/home_screens/widgets/dialogs/project
 import 'package:prestigious_project/widget/card_example_screen.dart';
 import 'package:prestigious_project/widget/prestigious_project.dart';
 import 'package:prestigious_project/widget/prestigious_project_header_card.dart';
+import 'package:prestigious_project/widget1/Existing_chats_list_widget/existing_chats_list_item_widget.dart';
+//import 'package:prestigious_project/widget1/check_in_widget.dart';
+//import 'package:prestigious_project/widget1/existing_chats_dialog.dart';
+//import 'package:prestigious_project/widget1/existing_list_chats_dialog.dart';
 //import 'package:prestigious_project/widget1/ontap_prestigious_project_card.dart';
-import 'package:prestigious_project/widget1/project_name_and_progress_dialog_widget.dart';
+//import 'package:prestigious_project/widget1/project_name_and_progress_dialog_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -71,6 +75,9 @@ class HomeScreen extends StatelessWidget {
             ),
             //OntapPrestigiousProjectCard(),
             //ProjectNameAndProgressDialogChildWidget(),
+            // CheckInDialogWidget(),
+            //ExistingChatsDialog(),
+            // ExistingChatsListWidgets(),
           ],
         ),
       ),
